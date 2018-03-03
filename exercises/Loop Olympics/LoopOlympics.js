@@ -9,11 +9,11 @@
 //     console.log(fruit[i])
 // }
 
-    var num= []
-    for (var i=0; i<10; i++){
-        num.push(i);
-    }
-    console.log(num);
+    // var num= []
+    // for (var i=0; i<10; i++){
+    //     num.push(i);
+    // }
+    // console.log(num);
 
 // for(var i=0; i<100; i++) {
 //     if (i % 2 ==0){ 
@@ -30,56 +30,64 @@
 //     console.log(people[i])
 // }
 
-//write a loop that will print out all the names of the people of the people arary
-// Write a loop that pushes the names into a names array, and the occupations into an occupations array.
-//  a loop that pushes every other name to an array starting with "Harrison Ford", and every other occupation to another array starting with "Singer".// Write
+// var peopleArray = [  
+//     {
+//       name: "Harrison Ford",
+//       occupation: "Actor"
+//     },
+//     {
+//       name: "Justin Bieber",
+//       occupation: "Singer"
+//     },
+//     {
+//       name: "Vladimir Putin",
+//       occupation: "Politician"
+//     },
+//     {
+//       name: "Oprah",
+//       occupation: "Entertainer"
+//     }
+//   ]
 
-var peopleArray = [  
-    {
-      name: "Harrison Ford",
-      occupation: "Actor"
-    },
-    {
-      name: "Justin Bieber",
-      occupation: "Singer"
-    },
-    {
-      name: "Vladimir Putin",
-      occupation: "Politician"
-    },
-    {
-      name: "Oprah",
-      occupation: "Entertainer"
+  
+// for (var i=0; i<peopleArray.length; i++){
+//     console.log(peopleArray[i].name);
+// }
+
+// var names = []
+// for(var i=0; i<peopleArray.length; i++){
+//   names.push(peopleArray[i].name);
+  
+// }
+// console.log(names)
+
+// var occupations =[]
+// for (var i=0; i<peopleArray.length; i++){
+//   occupations.push(peopleArray[i].occupation);
+// }
+// console.log(occupations)
+
+// var names1 = []
+// for(var i=0; i<peopleArray.length; i++){
+//   names1.push(peopleArray[i].name+[i+=1]);
+  
+// }
+// console.log(names1)
+
+// var occupations1 =[]
+// for (var i=0; i<peopleArray.length; i++){
+//   occupations1.push(peopleArray[i+=1].occupation);
+// }
+//   console.log(occupations1)
+
+var grid = []
+  
+    for(var i=0; i<3; i++);{
+   grid.push([]);
+   for(var j=0; j<3; j++);{
+     grid[i].push([j])
     }
-  ]
+  }
+    console.log(grid)
 
   
-for (var i=0; i<peopleArray.length; i++){
-    console.log(peopleArray[i].name);
-}
-
-var names = []
-for(var i=0; i<peopleArray.length; i++){
-  names.push(peopleArray[i].name);
-  
-}
-console.log(names)
-
-var occupations =[]
-for (var i=0; i<peopleArray.length; i++){
-  occupations.push(peopleArray[i].occupation);
-}
-console.log(occupations)
-
-var names1 = []
-for(var i=0; i<peopleArray.length; i++){
-  names1.push(peopleArray[i+=1].name);
-  
-}
-console.log(names1)
-
-var occupations1 =[]
-for (var i=0; i<peopleArray.length; i++){
-  occupations1.push(peopleArray[i+=1].occupation);
-}
-  console.log(occupations1)

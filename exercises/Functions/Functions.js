@@ -1,36 +1,32 @@
-// var Add = function (a,b){
-//     return a+b
-// }
-// Add (5,8)
+var Add = function (a,b){
+    return a+b
+}
+Add (5,8)
 
-// var Lrg = function (a,b,c){
-//     console.log(Math.max(a,b,c))
-//     return Math.max(a,b,c)
+var Lrg = function (a,b,c){
+    // console.log(Math.max(a,b,c))
+    return Math.max(a,b,c)
 
-// }
+}
 
-// Lrg(5,8,4)
+Lrg(5,8,4)
 
 
-// function isEven(a) {
-//     if (a%2 == 0){
-//     console.log("Even")
-		
-//     }else{
-// 		console.log("Odd")
-// }
-// }
-// isEven(9)
+function isEven(a) {
+    if (a%2 == 0){
+    return "Even"
 
-// Write a function that accepts a string as a parameter. 
-// If the length of the string is less than or equal to twenty characters long, return the string concatenated with itself (string + string). 
-// If the string is more than twenty characters long, return the first half of the string.
+    }else{
+		return "Odd"
+}
+}
+isEven(9)
 
- var txt = function(val){
-    if(val.length<=20){
-    console.log(val + val)
-    }else (val>val.length)
-    console.log(val.slice-val.length)
-    }
+var txt = function (val) {
+    if (val.length <= 20) {
+        return val + val
+    } else if (val.length > 20)
+        return val.slice(0, val.length / 2)
+}
 
-    txt("ali")
+txt("hello world this is me")

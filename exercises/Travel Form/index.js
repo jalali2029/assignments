@@ -66,7 +66,8 @@ Lactose.addEventListener("change", location)
 
 form.addEventListener("submit", function () {
     alert("First Name: " + data.firstname + "\n"+
-"Last Name:" + data.lastname)
+"Last Name: " + data.lastname +"\n"+ "Age: "+data.age+"\n"+"Gender: "+data.gender.value+"\n"+"Destination: "+data.selectdes+
+"\n"+"Dietary: "+data.restrictions)
     // console.log(data.firstname);
 
 });

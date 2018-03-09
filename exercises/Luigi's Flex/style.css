@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-size: 0;
+    /* border: 1px solid black; */
+}
+@font-face {
+    font-family: Mariofont;
+    src: url(SuperMario256.ttf);
+}
+
+div {
+    font-family: myFirstFont;
+}
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    flex-direction: column; /* for contenct inside the header (h1)*/
+    justify-content: center;
+    flex: .10;
+    background-color: #ffd40e;
+}
+
+h1 {
+    font-size: 35px;
+    padding-left: 60px;
+    color: #e81b1f;
+    font-family: Mariofont;
+    
+}
+
+.banner {
+    flex: .40;
+    display: flex;
+    background-color: #e81b1f;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.img {
+    background-image: url(https://coursework.vschool.io/content/images/2015/07/luigi.png);
+    height: 95%;
+    background-position: center;
+    background-size: contain;
+    width: 200px;
+    background-repeat: no-repeat;
+}
+
+.main {
+    flex: .40;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+
+}
+h2{
+    font-size: 30px;
+    color: #e81b1f;
+    font-family: Mariofont;
+    line-height: 50px;
+    
+}
+p{
+    font-size: 25px;
+    color:#e81b1f;
+   font-weight: bold;
+    
+}
+
+footer {
+    display: flex;
+    flex-direction: row; 
+    justify-content:flex-end; 
+    align-items: center;
+    flex: .10;
+    background-color: #ffd40e;
+}
+.img2{
+    background-image: url(https://coursework.vschool.io/content/images/2015/07/greenmushroom.png);
+    height: 80%;
+    background-position: center;
+    background-size: contain;
+    width: 50px;
+    background-repeat: no-repeat;
+   
+}

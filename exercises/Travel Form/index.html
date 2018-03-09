@@ -15,27 +15,27 @@ Whether they have any dietary restrictions (check boxes for vegetarian, kosher, 
 <body>
     <form id ="submit" name="TravelForm">
         <h3>Passenger Name</h3>
-<input id="input" type="text" placeholder="First Name" name="firstname">
-<input id="input" type="text" placeholder="Last Name" name="lastname">
+<input id="firstName" type="text" placeholder="First Name" name="firstname">
+<input id="lastName" type="text" placeholder="Last Name" name="lastname">
 <h3>Passenger Age</h3>
-<input id="number" type="Number" placeholder="Age" name="age">
+<input id="Age" type="Number" placeholder="Age" name="age">
 <h3>Gender</h3>
-<input id="radio" value="male" type="Radio" name="gender">Male</input>
+<input id="Male" value="male" type="Radio" name="gender">Male</input>
 
-<input id="radio" value="female" type="Radio" name="gender">Female</input>
+<input id="Female" value="female" type="Radio" name="gender">Female</input>
 
 
 <h3>Destination</h3>
-<select name="select" id="destination">
+<select name="select" id="Destination">
         <option value="" name="usa"></option>
         <option value="usa" >United States</option>
         <option value="cnd" >Canada</option>
         <option value="aus">Australia</option>
     </select>
     <h3>Dietry Restrictions</h3>
-    <input type="checkbox" name="restrictions1">Vegetarian</input>
-    <input type="checkbox" name="restrictions2">Kosher</input>
-    <input type="checkbox" name="restrictions3">Lactose</input>
+    <input type="checkbox" id="Vegetarian" name="vegetarian">Vegetarian</input>
+    <input type="checkbox" id="Kosher" name="kosher">Kosher</input>
+    <input type="checkbox" id="Lactose" name="lactose">Lactose</input>
     <button>Submit</button>
     </form>
     <script src="index.js"></script>

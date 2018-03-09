@@ -1,29 +1,30 @@
 
 var form = document.getElementById("submit");
-var nameInput1 = document.getElementById("firstname");
-var nameInput = document.getElementById("lastname");
-var ageInput = document.getElementById ("age");
-var selectgender1 =document.getElementById ("male")
-var selectgender =document.getElementById ("female")
-var selectdes = document.getElementById ("destination")
-var dietry =document.getElementById ("restriction1")
-var dietry =document.getElementById ("restriction2")
-var dietry =document.getElementById ("restriction3")
+var firstNameInput = document.getElementById("firstName");
+var lastNameInput = document.getElementById("lastName");
+var ageInput = document.getElementById ("Age");
+var selectgender1 =document.getElementById ("Male")
+var selectgender =document.getElementById ("Female")
+var selectdes = document.getElementById ("Destination")
+var Vegetarian =document.getElementById ("Vegetarian")
+var Kosher =document.getElementById ("Kosher")
+var Lactose =document.getElementById ("Lactose")
 
 var data = {
     firstname: "",
     lastname: "",
     age: "",
     gender:"",
-    destination: ""
+    destination: "",
+    restrictions: []
 
 }
-nameInput1.addEventListener("input", function (event){
+firstNameInput.addEventListener("input", function (event){
 data.firstname=event.target.value;
 console.log(data);
 });
 
-nameInput.addEventListener("input", function (event) {
+lastNameInput.addEventListener("input", function (event) {
     data.lastname = event.target.value;
 console.log(data)
 });
@@ -33,8 +34,8 @@ ageInput.addEventListener("input", function (event) {
    console.log(data)
 });
 
-nselectgender1.addEventListener("input", function (event) {
-    data.age = event.target.value;
+selectgender1.addEventListener("input", function (event) {
+    data.gender = event.target.value;
     console.log(data)
 });
 selectgender.addEventListener("input", function (event) {
@@ -46,26 +47,26 @@ selectdes.addEventListener("input", function (event) {
     console.log(data)
 });
 
-function location(event) {
+function Dietary(event) {
     
     console.log(event.target.name);
     if (event.target.checked) {
-        data.location.push(event.target.name);
+        data.restrictions.push(event.target.name);
     } else {
         
-        var index = data.location.indexOf(event.target.name)
-        data.location.splice(index, 1);
+        var index = data.restrictions.indexOf(event.target.name)
+        data.restrictions.splice(index, 1);
     }
-    console.log(data.location);
+    console.log(data.restrictions);
 }
 
-restriction1.addEventListener("change", location)
-restriction2.addEventListener("change", location)
-restriction3.addEventListener("change", location)
+Vegetarian.addEventListener("change", location)
+Kosher.addEventListener("change", location)
+Lactose.addEventListener("change", location)
 
 form.addEventListener("submit", function () {
-    alert("First Name: " + data.firstName + "\n")
-    console.log(data.firstname);
+    alert("First Name: " + data.firstname + "\n"+
+"Last Name:" + data.lastname)
+    // console.log(data.firstname);
 
 });
-console.log(data)

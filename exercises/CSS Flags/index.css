@@ -4,29 +4,60 @@
     font-size: 0;
 }
 
-body{
+body {
     height: 100vh;
     position: relative;
 }
-#main {
+
+.main {
+    height: 100%;
     position: absolute;
-    width: 80%;
-    top: 50%;
-    left: 50%;
+    width: 100%;
+   
+    /* transform: translateY(-50%) translateX(-50%); */
+}
+
+h1 {
+    text-align: center;
+    font-size: 25px;
+    font-family: fantasy;
+}
+
+.flags{
+    height: 200px;
+    width: 50%;
+    position: absolute;
+    transform: translateY(-50%) translateX(-50%);
+    
+}
+
+.franceblue {
+    /* height: 100%; */
+    width: 25%;
+    display: inline-block;
+    background-color: blue;
+    border:1px solid black;
+    
+}
+
+.francewhite {
+    /* height: 100%; */
+    width: 25%;
+    display: inline-block;
+    border:1px solid black;
+}
+
+.francered {
+    /* height: 100%; */
+    width: 25%;
+    display: inline-block;
+    background-color: red;
+    border:1px solid black;
+}
+.germany{
+    height: 160px;
+    position: absolute;
+    
     transform: translateY(-50%) translateX(-50%);
 }
-
-.flags {
-    height: 250px;
-    width: 80%;
-}
-
-.col {
-    height: 100%;
-    display: inline-block;
-    border: 3px solid white;
-    width: 25%;
-    background-color: gray;
-}
-
 

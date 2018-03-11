@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-size: 0;
+
+}
+ body {
+    margin: 30px;
+    
+}
+.wrapper{
+  height: 100vh;
+}
+.header{
+    background-color: gray;
+    border: 1px solid black;
+   height: 60px;
+}
+.secondheader{
+    height: 65px;
+}
+h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+}
+h2{
+    font-size: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.halfcontent{
+    width: 100%;
+    height: 40%;
+    display: flex
+}
+.image{
+    background-image: url("https://ichef.bbci.co.uk/news/624/cpsprodpb/DD46/production/_100364665_xi.jpg");
+    width: 50%;
+    height: 100%;
+    float: left;
+    margin: 3px;
+}
+.paragraph{
+    width: 25%;
+  
+}
+p{
+    font-size: 20px;
+    margin: 3px;
+    text-align: justify;
+}
+.secondhalf{
+    width: 100%;
+column-count: 4;
+margin-top: 5px;
+column-gap: 20px;
+}
+.italic{
+    font-style: italic;
+    font-size: 20px;
+}
+.bold{
+    font-weight: bold;
+    font-size: 20px;
+}
+.red{
+    color: red;
+    font-size: 20px;
+}
+.footer{
+    background-color: yellow;
+    height: 50px;
+    width: 100%;
+    font-size: 40px;
+}

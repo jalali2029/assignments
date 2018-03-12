@@ -1,0 +1,43 @@
+
+
+.wrapper{
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+}
+h1{
+    text-align: center;
+    background-color: bisque;
+}
+.additioncolumn{
+    height: 100%;
+    width: 30%;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.subtractioncolumn{
+    height: 100%;
+    width: 30%;
+    background-color:pink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.multiplicationcolumn{
+    height: 100%;
+    width: 30%;
+    background-color: peru;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.result{
+    font-size: 20px;
+    color: blue;
+    text-align: center;
+}

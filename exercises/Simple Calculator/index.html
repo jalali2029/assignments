@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="style.css">
+
+<body>
+    <header>
+        <h1>Simple Calculator</h1>
+    </header>
+    <section class="wrapper">
+        <div class="additioncolumn">
+            <form name="addition" id="addition-form">
+                <div class="form-items">
+                    <input type="number" name="num1">
+                    <center>
+                        <p class="plus-sign">+</p>
+                    </center>
+                    <input type="number" name="num2">
+                    <br>
+                    <center>
+                        <button>Add</button>
+                        <input type="button" onclick="ad()" value="Reset">
+                    </center>
+                </div>
+                <div class="result">
+                    <p id="additionoutput"></p>
+                </div>
+            </form>
+
+        </div>
+
+        <div class="subtractioncolumn">
+            <form name="subtraction" id="sub-form">
+                <div class="form-items">
+                    <input type="number" name="num1">
+                    <center>
+                        <p class="minus-sign">-</p>
+                    </center>
+                    <input type="number" name="num2">
+                    <br>
+                    <button>Subtract</button>
+                    <input type="button" onclick="sub()" value="Reset">
+                </div>
+                <div class="result">
+                    <p id="subtractionoutput"></p>
+                </div>
+            </form>
+
+        </div>
+        <div class="multiplicationcolumn">
+            <form name="multiplication" id="multiply-form">
+                <div class="form-items">
+                    <input type="number" name="num1">
+                    <center>
+                        <p class="times-sign">X</p>
+                    </center>
+                    <input type="number" name="num2">
+                    <br>
+                    <button>Multiply</button>
+                    <input type="button" onclick="mul()" value="Reset">
+                </div>
+                <div class="result">
+                    <p id="multiplicationoutput"></p>
+                </div>
+            </form>
+
+        </div>
+    </section>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

@@ -1,4 +1,4 @@
-var employee =[]
+// var employee =[]
 var employee = function (name, jobtitle, salary, status="full time"){
 this.name=name;
 this.jobtitle=jobtitle;

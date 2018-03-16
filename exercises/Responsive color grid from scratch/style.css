@@ -3,74 +3,37 @@
     font-size: 0px;
     margin: 0;
 }
-
+@media (min-width:750px){
 #boxes {
     width: 100%;
 }
-
 .box1 {
     background-color: #F5C6D6;
-    width: 660px;
+    width: 100%;
     height: 130px;
     border: 5px solid white;
     margin-top: 80px;
 }
-
 #box2 {
     width: auto;
     margin: auto;
 }
-
-.subox1 {
+.subox {
     background-color: #EE2E84;
     display: inline-block;
     height: 130px;
-    width: 165px;
+    width: 100%;
     border: 5px solid white;
 }
-
-.subox2 {
-    display: inline-block;
-    background-color: #EE2E84;
-    height: 130px;
-    width: 165px;
-    border: 5px solid white;
-}
-
-.subox3 {
-    display: inline-block;
-    background-color: #EE2E84;
-    height: 130px;
-    width: 165px;
-    border: 5px solid white;
-}
-
-.subox4 {
-    display: inline-block;
-    background-color: #EE2E84;
-    height: 130px;
-    width: 165px;
-    border: 5px solid white;
-}
-
 .box3 {
     width: auto;
     height: auto;
 }
-
-.subox5 {
+.subox1 {
     background-color: #85CFD8;
     display: inline-block;
     height: 130px;
-    width: 330px;
-    border: 5px solid white;
-}
-
-.subox6 {
-    background-color: #85CFD8;
-    display: inline-block;
-    height: 130px;
-    width: 330px;
+    width: 100%;
     border: 5px solid white;
 }
 
@@ -78,19 +41,35 @@
     width: auto;
     height: auto;
 }
-
-.subox7 {
+.subox2 {
     background-color: #8DC63F;
     display: inline-block;
     height: 130px;
-    width: 460px;
+    width: 100%;
     border: 5px solid white;
 }
-
-.subox8 {
+.subox25 {
     background-color: #E76E34;
     display: inline-block;
     height: 130px;
-    width: 200px;
+    width: 100%;
     border: 5px solid white;
+}
+}
+@media(min-width:1250px){
+    .box1{
+        width:100%
+    }
+    .subox{
+        width: 25%;
+    }
+    .subox1{
+        width:50%;
+    }
+    .subox2{
+        width:75%;
+    }
+    .subox25{
+        width:25%
+    }
 }

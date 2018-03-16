@@ -1,0 +1,36 @@
+{
+
+    "appetizers": [{
+        "appetizerName": "nachos",
+        "appetizerIngr": "butter",
+        "description": "good for your health"
+
+    }],
+
+    "cold Sandwiches": [{
+        "coldSandName": "shamshoor",
+        "coldsandIngr": "nan",
+        "description": "eat only if the weether is hot"
+
+    }],
+
+    "Hot Sandwiches": [{
+        "hotsandName": "",
+        "hotsandIngr": "",
+        "description": ""
+
+    }],
+    "Desserts": [{
+        "DessertsName": "cake",
+        "DessertsIngr": "",
+        "description": ""
+
+    }],
+    "Drinks": [{
+        "DrinksName": "pepsi",
+        "DrinksIngr": "water and other stuff",
+        "description": "don't even think aobut it"
+
+    }]
+
+}

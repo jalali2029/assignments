@@ -1,0 +1,129 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+   
+}
+#wrapper{
+    height: 100vh;
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2px;
+}
+p{
+    font-size: 15px;
+    font-family: fantasy;
+    color: back;
+    margin: 6px;
+    padding: 5px;
+}
+.box1{
+height: 400px;
+width: 800px;
+margin: 30px;
+background-color: pink;
+}
+.box2{
+    height: 400px;
+    width: 800px;
+    margin: 30px;
+    background-color: lime;
+}
+.box3{
+    height: 400px;
+    width: 800px;
+    margin: 30px;
+    background-color: lightslategrey;
+}
+.box4{
+    height: 400px;
+    width: 800px;
+    margin: 30px;
+    background-color: maroon;
+}
+.box5{
+    height: 400px;
+    width: 800px;
+    margin: 30px;
+    background-color: tomato;
+}
+.box6{
+    height: 400px;
+width: 800px;
+margin: 30px;
+background-color: slateblue;
+}
+
+.box1:hover{
+    background-color: green;
+    transition: 1s;
+    border:3px solid black;
+    border-radius: 10%;
+    box-shadow: 10px 10px 5px 0 #999;
+    position: relative;
+    opacity: 4;
+    transition: ease-out;
+    transition-delay: .5s;
+    transition-duration: 1s;
+}
+.box2:hover{
+    background-color: cyan;
+    transition: 1s;
+    border:3px solid black;
+    border-radius: 10%;
+    box-shadow: 10px 10px 5px 0 #999;
+    position: relative;
+    opacity: 4;
+    transition: ease-out;
+    transition-delay: .5s;
+    transition-duration: 1s;
+}
+.box3:hover{
+    background-color: brown;
+    transition: 1s;
+    border:3px solid black;
+    border-radius: 10%;
+    box-shadow: 10px 10px 5px 0 #999;
+    position: relative;
+    opacity: 4;
+    transition: ease-out;
+    transition-delay: .5s;
+    transition-duration: 1s;
+}
+.box4:hover{
+    background-color: magenta;
+    transition: 1s;
+    border:3px solid black;
+    border-radius: 10%;
+    box-shadow: 10px 10px 5px 0 #999;
+    position: relative;
+    opacity: 4;
+    transition: ease-out;
+    transition-delay: .5s;
+    transition-duration: 1s;
+}
+.box5:hover{
+    background-color: darkblue;
+    transition: 1s;
+    border:3px solid black;
+    border-radius: 10%;
+    box-shadow: 10px 10px 5px 0 #999;
+    position: relative;
+    opacity: 4;
+    transition: ease-out;
+    transition-delay: .5s;
+    transition-duration: 1s;
+}
+.box6:hover{
+    background-color: green;
+    transition: 1s;
+    border:3px solid black;
+    border-radius: 10%;
+    box-shadow: 10px 10px 5px 0 #999;
+    position: relative;
+    opacity: 4;
+    transition: ease-out;
+    transition-delay: .5s;
+    transition-duration: .5s;
+}

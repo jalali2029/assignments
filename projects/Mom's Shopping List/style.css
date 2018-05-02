@@ -1,0 +1,30 @@
+#formlist{
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#inputBox{
+    width: 80%;
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+}
+#send{
+    border-top-left-radius: 25%;
+    border-top-right-radius: 25%;
+    border-bottom-left-radius: 25%;
+    border-bottom-right-radius: 25%;
+    background-color: red;
+}
+.list-wrapper{
+    display: flex;
+    justify-content: center;
+}
+#lists {
+    display: flex;
+    flex-direction: column;
+    
+}
+

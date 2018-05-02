@@ -1,0 +1,110 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    /* border: 1px solid black; */
+}
+.wrapper{
+    height: 100vh;
+    /* background-image: url(http://feezbo.com/a/2018/02/scientific-toys-for-boys_best-educational-toy-websites_kids-toys-uk_educational-gifts-for-kids_learning-toys-website.jpg);
+    background-repeat: no-repeat; */
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr  ;
+    grid-template-areas: 
+    "navbar",
+    "content",
+    "services",
+    "images";
+   
+}
+p{
+    font-size: 20px;
+    font-style: normal;
+    padding-left: 90px;
+    padding-right:90px;
+    margin-top: 20px;
+    color: black;
+   text-align: justify;
+}
+h1{
+   text-align: center;
+    padding-left: 60px;
+    padding-right:60px;
+    margin-top: 20px;
+    background-color: lightcoral;
+}
+.nav ul {
+    list-style-type: none;
+
+    padding: 0;
+    background-color:#333;
+}
+
+li {
+    float: left;
+    padding-left: 10px;
+}
+.navbar{
+ grid-area: navbar; 
+}
+.serv h1{
+    background-color: yellowgreen;
+}
+.nav{
+    
+    background-color: black;
+   height: 50px;
+    color: wheat;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start
+}
+
+.content {
+    grid-area: content;
+
+}
+
+.services{
+    grid-area: services;
+    
+}
+.list li{
+     
+        float: left;
+        width: 50%;
+        /* padding: 1em 10%; */
+        border-top: solid 1px #d9e3dc;
+        color: #c0cac3;
+        font-style: italic;
+        font-size: 1.2em;
+        cursor: pointer;
+        padding-left: 80px;
+        padding-right:80px;
+}
+.images{
+    grid-area: images;
+}
+.footer{
+    grid-area: footer;
+} 
+.foot{
+    display: flex;
+    justify-content: space-between;
+    background-color: darkgreen;
+    height: 50px;
+     color: white;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     border-top-left-radius: 10px;
+     border-top-right-radius: 10px;
+     border-bottom-left-radius: 10px;
+     border-bottom-right-radius: 10px;
+}
+.foot ul {
+    list-style-type: none;
+    padding: 0px;
+    background-color: gray;
+   
+}

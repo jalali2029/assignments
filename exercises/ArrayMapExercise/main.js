@@ -57,8 +57,3 @@ var namesOnly=([{
     age: 100
   }
 ])
-console.log(Object.values(namesOnly.name))
-// var allnames=arr.map (function (arr) {
-// return object.values(object.name)
-// });
-// console.log(allnames)

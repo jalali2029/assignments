@@ -1,0 +1,26 @@
+*{
+    box-sizing: border-box;
+    margin: 0
+}
+body{
+    background-color: bisque;
+}
+li{
+    list-style-type: none;
+    padding: 5px;
+}
+
+.main{
+    width: 90%;
+    margin:auto;
+    /* margin: 400px;
+    margin-top: 300px; */
+    background-color: gray;
+}
+.Spring{
+    background-color: green;
+}
+ul{
+    margin: 2cm;
+    /* display: flex; */
+}

@@ -1,0 +1,42 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: blanchedalmond;
+}
+.wrapper{
+  background-color: whitesmoke;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  
+}
+p{
+    display: inline;
+    line-height: 40px;
+    padding-left: 20px;
+}
+nav{
+    background-color: white;
+    height: 50px;
+    padding-left: 5px;
+    display: flex;
+    align-items: center;
+}
+nav a{
+    padding-left: 10px;
+    align-items: center;
+    text-decoration: none;
+}
+nav a:hover{
+    background-color: gray;
+    color: red;
+}
+
+footer{
+    background-color: black;
+    color: white;
+}
+.content{
+    height: 100vh;
+}

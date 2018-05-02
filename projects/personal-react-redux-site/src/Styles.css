@@ -1,0 +1,195 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}body{
+    /* height: 100%; */
+    display: flex;
+    justify-content: center;
+    background-image: url("http://backgroundcheckall.com/wp-content/uploads/2017/12/weather-background-5.jpg");
+    background-repeat: no-repeat;
+    /* height: 100vh; */
+    
+}
+#root{
+    width: 800px;
+}
+.app-wrapper{
+    display: grid;
+    grid-template-rows: 1fr 11fr 1fr;
+    grid-template-areas: "hdr" "con" "ftr";
+
+}
+
+.header {
+    /* grid-area: hdr; */
+    background-color: rgb(190, 208, 224);
+    text-align: center;
+    /* border-radius: 10px ; */
+    font-family: fantasy;
+}
+.content-wrapper{
+    /* grid-area: con; */
+    background-image: url("https://i.pinimg.com/originals/cf/0f/0d/cf0f0deb36237805f79f09e4e0ba0cb2.jpg");
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    background-size: 100% 100%;
+    
+}
+
+.footer {
+    /* grid-area: ftr; */
+    background-color: rgb(33, 41, 56);
+    color: white;
+    height: 50px;
+    padding: 8px;
+}
+.footer span:last-child{
+    float: right;
+}
+.header nav {
+    background-color: rgb(59, 70, 82);
+   display: flex;
+   justify-content: space-around;
+   height: 30px;
+ 
+   /* margin-bottom: 10px; */
+
+}
+nav a{
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    height: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 5px;
+}
+nav a:hover{
+    background-color: rgb(205, 206, 211);
+    color: black;
+}
+nav a:clicked{
+    color: red;
+}
+.weather{
+margin-top: 10px;
+background-image: url("data:image/jpeg;base64,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");
+  
+}
+.weather p{
+    color: brown;
+    padding-top: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+}
+form{
+   margin-top: 100px;
+}
+form  input{
+   margin: 10px;
+   border-radius: 5px;
+}
+form button{
+    color: rgb(61, 54, 54);
+    border: 1px solid gray;
+    border-radius: 5px;
+    background-color: lightgray;
+}
+
+.weather-data p{
+    color: white;
+    font-size: 20px;
+    line-height: 30px;
+    margin-left: 10px;
+}
+.home{
+    background-image: url("http://www.pptgrounds.com/wp-content/uploads/2013/12/Weather-Few-Clouds-PPT-Backgrounds.jpg");
+    background-repeat: no-repeat;
+    width: 100%;
+}
+.about{
+    width: 100%;
+    background-image: url("https://img00.deviantart.net/3ad9/i/2010/107/f/3/sunny_day_background_by_originstory.jpg");
+    background-repeat: no-repeat;
+}
+p{
+    margin: 10px;
+}
+.alert p{
+    color: rgb(141, 7, 7);
+    font-size: 20px;
+}
+.about p{
+    line-height: 30px;
+    margin: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+    color: rgb(31, 20, 3);
+    text-align: justify;
+}
+.home p{
+    line-height: 30px;
+    margin: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+    color: rgb(31, 20, 3);
+    text-align: justify;
+}
+@media screen and (max-width:750px){
+ 
+.home{
+    width: 70%;
+    height: 100%;
+}
+.home p{
+    color: darkblue;
+}
+.home p{
+    color: darkblue;
+}
+.about{
+    width: 50%;
+    background-repeat: no-repeat;
+}
+.header {
+    height: 90px;
+}
+.header nav{
+    background-color: rgb(0, 35, 104);
+}
+.weather{
+    width: 70px;
+}
+.home nav{
+    margin-top: 24.5px;
+}
+.weather nav{
+    /* margin-top: 24.5px; */
+    height: 20px;
+}
+
+.app-wrapper{
+    display: grid;
+    grid-template-rows: 1fr 11fr 1fr;
+    grid-template-areas: "hdr" "con" "ftr";
+
+}
+.content-wrapper{
+    grid-area: con;
+    background-image: url("https://i.pinimg.com/originals/cf/0f/0d/cf0f0deb36237805f79f09e4e0ba0cb2.jpg");
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    background-size: 100% 100%;
+    
+}
+body{
+    /* height: 100%; */
+    display: flex;
+    justify-content: center;
+    background-image: url("http://backgroundcheckall.com/wp-content/uploads/2017/12/weather-background-5.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    
+}
+}

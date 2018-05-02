@@ -1,7 +1,7 @@
 var rs =require(readlin-sync);
 Console.console.log("Welcome to the Game");
-var PlayerName=rs.question ("What is your Name")
-// while loop continues as loong as my hp is > 1. or my wincon is not met
+var PlayerName=rs.question ("What is your Name?")
+playerName=rs.question ("press W to walk")
 
 var player={
     name: playerName,

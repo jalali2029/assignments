@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    border: 1px solid black;
+}
+
+body {
+    background-image: url(https://s3.amazonaws.com/videoblocks-content/video/thumbnail/UD7CEz6/laptop-zoom-in-animation-computer-background-placeholder_xjak7t2p__F0000.png);
+    background-size: 100%;
+    background-repeat: no-repeat no-repeat no-repeat no-repeat;
+    opacity: 0.8;
+}
+
+.wrapper {
+    
+    height: 100vh;
+  
+}
+
+.header {
+    overflow: hidden;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.header a {
+    float: right;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.header a:hover {
+    background: #ddd;
+    color: black;
+    cursor: pointer;
+}
+.headline{
+    margin-top: 66px;
+    text-align: center;
+}
+.headline h1{
+    text-transform: uppercase;
+}
+.button {
+    display: inline-block;
+    border-radius: 10px;
+    background-color: gray;
+    border: none;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 150px;
+    width: 270px;
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+  .content{
+      display: flex;
+      justify-content: center;
+      align-self: center;
+  }
+  .footer{
+      background-color: white;
+     
+  }

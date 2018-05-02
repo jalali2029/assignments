@@ -1,0 +1,312 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    /* border: 1px solid black; */
+}
+
+body {
+    background-color: rgba(120, 129, 136, 0.05);
+}
+
+.input {
+    text-align: center;
+}
+
+.header {
+    grid-area: hdr;
+    opacity: 0.8;
+    background-color: white;
+    padding: 3px;
+    display: flex;
+    align-items: center;
+    height: 50px;
+    border-bottom: 1px solid #e8e9eb;
+    justify-content: space-between;
+}
+
+.header h3 {
+    font-weight: 400;
+    font-size: 14px;
+    padding-left: 20px;
+    float: none;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.subscribe {
+    grid-area: sbs;
+    opacity: 0.8;
+    padding: 3px;
+}
+
+.subscribe h3 {
+    padding: 65px;
+    padding-bottom: 30px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.menubar {
+    display: block;
+    width: 20%;
+}
+
+input {
+    border: 1px solid #e8e9eb;
+    background-color: #fff;
+    color: #000;
+    max-width: 100%;
+    line-height: 1.2;
+    border-radius: 2px;
+    padding: 8px 15px;
+}
+
+.btn {
+    user-select: none;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 2px;
+    padding: 8px 15px;
+    background-color: #7796a8;
+    color: #fff;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-size: 12px;
+}
+
+.top-img {
+    margin-top: 30px;
+    grid-area: img;
+    display: block;
+    justify-content: center;
+    background-color: white;
+}
+
+img {
+    height: 270px;
+    width: 400px;
+    margin-left: 145px;
+    margin-right: 145px;
+    display: block;
+}
+
+.content {
+    grid-area: con;
+    margin: 10px;
+}
+
+p {
+    font-size: 1em;
+    color: #788188;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    line-height: 2em;
+    text-align: justify;
+}
+
+.bottom-img {
+    grid-area: bimg;
+    height: 300px;
+    opacity: 0.8;
+    background: url("https://cdn.shopify.com/s/files/1/2454/4833/files/Coffee_Bar_Bryant_Courtyard_at_Night_1512x.jpg?v=1509540378");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottom-img button {
+    border-radius: 5px;
+    width: 120px;
+    height: 40px;
+    background-color: rgb(39, 5, 7);
+    color: white;
+    opacity: 0.7;
+    border: 1px solid white;
+}
+.bottom-img button:hover{
+    cursor: pointer;
+    background-color: azure;
+    color: black;
+}
+.bottom-img h2 {
+    color: white;
+    font-weight: 400;
+    line-height: 1.5em;
+    text-align: center;
+    text-shadow: white;
+}
+
+.footer {
+    grid-area: ftr;
+}
+
+a {
+    color: #3d4246;
+    text-decoration: none;
+}
+
+.header-ul {
+    display: none;
+    padding: 5px 10px;
+    text-transform: uppercase;
+}
+
+.list {
+    list-style-type: none;
+    display: inline-block;
+    padding: 20px;
+    text-transform: uppercase;
+    display: table-cell;
+    float: none;
+    cursor: pointer;
+}
+
+li {
+    list-style-type: none;
+}
+
+.menubar {
+    grid-area: men;
+}
+
+.left-menu {
+    line-height: 40px;
+    text-transform: uppercase;
+    padding-left: 20px;
+    width: 145px;
+    text-shadow: rgb(214, 214, 214) 0.1em 0.1em 0.2em;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottom-list li {
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 5px;
+    cursor: pointer;
+    margin: 0;
+}
+
+li:hover {
+    background-color: gray;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-areas: 'hdr hdr hdr' 'men sbs sbs' 'img img img' 'con con con' 'bimg bimg bimg' 'ftr ftr ftr';
+    grid-gap: 5px;
+    padding: 10px;
+}
+
+@media only screen and (min-width:750px) {
+    * {
+        box-sizing: border-box;
+        margin: 0;
+    }
+    .wrapper {
+        display: grid;
+        grid-template-areas: 'hdr hdr hdr' 'sbs sbs sbs' 'img img img' 'con con con' 'bimg bimg bimg' 'ftr ftr ftr';
+        grid-gap: 5px;
+        padding: 10px;
+    }
+    .top-img {
+        margin-top: 30px;
+        grid-area: img;
+        background-color: white;
+        display: flex;
+    }
+    img {
+        height: 330px;
+        width: 450px;
+        margin: 1px;
+    }
+    .left-menu {
+        display: none;
+    }
+    .header {
+        height: 60px;
+    }
+    .header h3{
+        flex: 1;
+    }
+    .header-ul {
+        display: flex;
+        flex: 2;
+    }
+    .header-ul li {
+        text-transform: uppercase;
+        display: inline-block;
+        padding: 25px;
+        cursor: pointer;
+    }
+    .search-container-top{
+        flex: 1;
+    }
+   
+    /*
+    .header{
+       background-color: gray;
+       height: 85px;
+    }
+    .header-ul{
+        width: 50%;
+        display: block;
+        margin: 150px;
+    }
+    li:hover{
+        background-color: #ddd;
+        color: black;
+        height: 0;
+    }
+    li{
+        list-style-type: none;
+        display: inline-block;
+        padding: 30px;
+        text-transform: uppercase;
+        display: table-cell;
+        float: none;
+        cursor: pointer;
+    }
+    
+       .search-container-top {
+        display: flex;
+        justify-content: flex-end;
+      }
+      .bottom-img{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+      }
+    .bottom-img button{
+
+    }
+   
+    .search-container{
+        display: flex;
+        justify-content: center;
+        margin-left: 300px;
+    }
+    p{
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+    .left-menu{
+        display: none;
+    }
+    .footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+        padding: 10px;
+    } */
+}

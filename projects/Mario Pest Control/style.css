@@ -1,0 +1,48 @@
+
+body{
+    background-color: gray;
+    margin: 0;
+}
+.wrapper {
+   height: 100vh;
+   text-align: center;
+   margin-top: 0;
+}
+img{
+    height: 150px;
+    width: 150px;
+    margin: 5px;
+}
+ul p{
+    color: black;
+}
+h1{
+    text-align: center;
+    background-color: white;
+    margin: 0;
+}
+
+ul {
+    background: #3399ff;
+    padding: 20px;
+    list-style-type: none;
+}
+
+ul li {
+    background: #cce5ff;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+footer{
+    background: black;
+    display: flex;
+    flex-direction: row;
+    height: 80px;
+}
+footer, p{
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+}
+

@@ -1,0 +1,32 @@
+body{
+    background-color: gray;
+    margin: auto;
+}
+img{
+    height: 600px;
+    width: 70%;
+    border: 1px solid black;
+    align-self: center;
+  
+}
+.main{
+   display: flex;
+   flex-direction: column;
+   margin: 20px;
+
+}
+
+hr{
+    color: black;
+}
+h1{
+    color: white;
+    background-color: black;
+}
+h2 {
+    background-color: white;
+    color: black;
+}
+h3{
+    text-align: center;
+}
